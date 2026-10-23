@@ -2,13 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <!-- Replace with your project URL -->
     <key>SUPABASE_URL</key>
-    <string>https://your-project.supabase.co</string>
+    <string>https://ruuupbtmuzaokiqrlrjz.supabase.co</string>
+
+    <!-- Replace with your anon public API key -->
     <key>SUPABASE_ANON_KEY</key>
-    <string>your-publishable-anon-key-here</string>
+    <string>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ1dXVwYnRtdXphb2tpcXJscmp6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI3NjY4MjYsImV4cCI6MjEwODM0MjgyNn0.Me-53PhMigtx9MCuwfu4UqAdLUsEEekdB3ewXQd8O1Y</string>
+
+    <!-- Seeded Library UUID in your backend database -->
     <key>DEFAULT_LIBRARY_ID</key>
     <string>11111111-1111-4111-8111-111111111111</string>
+
+    <!-- Set to false to disable mock mode and connect live -->
     <key>ENABLE_MOCK_MODE</key>
-    <true/>
+    <false/>
 </dict>
 </plist>
