@@ -239,6 +239,7 @@ public enum BookingError: LocalizedError, Equatable {
     case notInsideLibrary
     case noActiveVisit
     case unauthorized
+    case noAssignedSeat
     case serverError(String)
     case unknown
 
@@ -252,6 +253,8 @@ public enum BookingError: LocalizedError, Equatable {
             return .notInsideLibrary
         } else if upper.contains("NO_ACTIVE_VISIT") {
             return .noActiveVisit
+        } else if upper.contains("NO_ASSIGNED_SEAT") {
+            return .noAssignedSeat
         } else if upper.contains("UNAUTHORIZED") || upper.contains("JWT") || upper.contains("EXPIRED") {
             return .unauthorized
         } else {
@@ -271,6 +274,8 @@ public enum BookingError: LocalizedError, Equatable {
             return "No active visit found. Please scan the entry QR at the front desk."
         case .unauthorized:
             return "Your session has expired. Please sign in again."
+        case .noAssignedSeat:
+            return "You do not have an assigned seat to hold."
         case .serverError(let raw):
             return "Booking failed: \(raw)"
         case .unknown:

@@ -73,7 +73,7 @@ final class ModelDecodingTests: XCTestCase {
     }
 
     func testDateCountdownCalculation() {
-        let now = Date()
+        let now = Date(timeIntervalSince1970: 1700000000)
         let futureDate = now.addingTimeInterval(125) // 2 mins 5 seconds
         let futureISO = DateFormatterHelper.formatISO8601(futureDate)
 
@@ -84,14 +84,93 @@ final class ModelDecodingTests: XCTestCase {
         XCTAssertEqual(formatted, "02:05")
     }
 
-    func testBookingErrorMapping() {
-        let err1 = BookingError.from(message: "Error: SEAT_UNAVAILABLE - The selected seat is already occupied")
-        XCTAssertEqual(err1, .seatUnavailable)
+    func testGracePeriodBoundaryHandling() {
+        let now = Date(timeIntervalSince1970: 1700000000)
+        
+        // Exact boundary (0 seconds remaining)
+        let exactDeadline = DateFormatterHelper.formatISO8601(now)
+        let zeroRemaining = DateFormatterHelper.remainingSeconds(from: exactDeadline, relativeTo: now)
+        XCTAssertEqual(zeroRemaining, 0)
+        XCTAssertEqual(DateFormatterHelper.formatCountdown(seconds: zeroRemaining), "00:00")
 
-        let err2 = BookingError.from(message: "ALREADY_HAS_SEAT: User has an active booking")
-        XCTAssertEqual(err2, .alreadyHasSeat)
+        // Past boundary (already expired)
+        let pastDate = now.addingTimeInterval(-60)
+        let pastDeadline = DateFormatterHelper.formatISO8601(pastDate)
+        let pastRemaining = DateFormatterHelper.remainingSeconds(from: pastDeadline, relativeTo: now)
+        XCTAssertEqual(pastRemaining, 0, "Expired deadline must clamp to 0 seconds")
+        XCTAssertEqual(DateFormatterHelper.formatCountdown(seconds: pastRemaining), "00:00")
 
-        let err3 = BookingError.from(message: "NOT_INSIDE_LIBRARY: Must scan entry first")
-        XCTAssertEqual(err3, .notInsideLibrary)
+        // 20-minute standard grace period boundary
+        let twentyMins = now.addingTimeInterval(1200)
+        let twentyMinsISO = DateFormatterHelper.formatISO8601(twentyMins)
+        let twentyMinsRemaining = DateFormatterHelper.remainingSeconds(from: twentyMinsISO, relativeTo: now)
+        XCTAssertEqual(twentyMinsRemaining, 1200)
+        XCTAssertEqual(DateFormatterHelper.formatCountdown(seconds: twentyMinsRemaining), "20:00")
+    }
+
+    func testAllRequiredBackendErrorMappings() {
+        XCTAssertEqual(BookingError.from(message: "Error: SEAT_UNAVAILABLE"), .seatUnavailable)
+        XCTAssertEqual(BookingError.from(message: "ALREADY_HAS_SEAT: Active reservation exists"), .alreadyHasSeat)
+        XCTAssertEqual(BookingError.from(message: "NOT_INSIDE_LIBRARY: Must scan entry first"), .notInsideLibrary)
+        XCTAssertEqual(BookingError.from(message: "NO_ACTIVE_VISIT: No active entry"), .noActiveVisit)
+        XCTAssertEqual(BookingError.from(message: "UNAUTHORIZED: Token expired"), .unauthorized)
+        XCTAssertEqual(BookingError.from(message: "NO_ASSIGNED_SEAT: No seat to hold"), .noAssignedSeat)
+        XCTAssertEqual(BookingError.from(message: "CUSTOM_UNKNOWN_ERROR"), .serverError("CUSTOM_UNKNOWN_ERROR"))
+
+        // Verify friendly descriptions
+        XCTAssertFalse(BookingError.seatUnavailable.localizedDescription.isEmpty)
+        XCTAssertFalse(BookingError.alreadyHasSeat.localizedDescription.isEmpty)
+        XCTAssertFalse(BookingError.notInsideLibrary.localizedDescription.isEmpty)
+        XCTAssertFalse(BookingError.noActiveVisit.localizedDescription.isEmpty)
+        XCTAssertFalse(BookingError.unauthorized.localizedDescription.isEmpty)
+        XCTAssertFalse(BookingError.noAssignedSeat.localizedDescription.isEmpty)
+    }
+
+    func testDecodeBookSeatResponse() throws {
+        let json = """
+        {
+            "booking_id": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+            "seat_id": "11111111-2222-3333-4444-555555555555",
+            "seat_label": "B2",
+            "booking_status": "active",
+            "created_at": "2026-10-24T03:00:00Z"
+        }
+        """.data(using: .utf8)!
+
+        let response = try JSONDecoder().decode(BookSeatResponse.self, from: json)
+        XCTAssertEqual(response.seatLabel, "B2")
+        XCTAssertEqual(response.bookingStatus, "active")
+        XCTAssertEqual(response.bookingId, UUID(uuidString: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"))
+    }
+
+    func testDecodeStartGracePeriodResponse() throws {
+        let json = """
+        {
+            "booking_id": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+            "seat_id": "11111111-2222-3333-4444-555555555555",
+            "booking_status": "temporarily_away",
+            "grace_deadline": "2026-10-24T03:20:00Z"
+        }
+        """.data(using: .utf8)!
+
+        let response = try JSONDecoder().decode(GracePeriodResponse.self, from: json)
+        XCTAssertEqual(response.bookingStatus, "temporarily_away")
+        XCTAssertEqual(response.graceDeadline, "2026-10-24T03:20:00Z")
+    }
+
+    func testDecodeLeaveLibraryResponse() throws {
+        let json = """
+        {
+            "result": "left_library",
+            "visit_status": "completed",
+            "booking_status": "completed",
+            "seat_id": "11111111-2222-3333-4444-555555555555"
+        }
+        """.data(using: .utf8)!
+
+        let response = try JSONDecoder().decode(LeaveLibraryResponse.self, from: json)
+        XCTAssertEqual(response.result, "left_library")
+        XCTAssertEqual(response.visitStatus, "completed")
+        XCTAssertEqual(response.bookingStatus, "completed")
     }
 }

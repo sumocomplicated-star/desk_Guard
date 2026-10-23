@@ -7,52 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B291B7C09D145096ABC700D4 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 14D752E1945A5F40914F150F /* Supabase */; };
-		4E9BE74B53C152BFBF823E83 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 14D752E1945A5F40914F150F /* Supabase */; };
-		29C41123A9C05DD892EA5587 /* AppConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 060FA15122EE52F7AF7C9301 /* AppConfig.plist */; };
-		0BDDDA0F596356398D19D2B6 /* AppConfig.example.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5C35A06C7F85D9AB8160B31 /* AppConfig.example.plist */; };
-		25FE22BFE60F56698178DE61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CD9CC37868528186D5B11A /* Assets.xcassets */; };
-		D2371DA821DC52D68851CF69 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43169E4A6495D4297467C20 /* AuthViewModel.swift */; };
-		EA70910878B75A3290889D72 /* EntryScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FE872CE4B958E5AFE90200 /* EntryScannerViewModel.swift */; };
-		B51A4CD0037C51A0A41A0FB4 /* ExitScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED35FF496B59C3984535ED /* ExitScannerViewModel.swift */; };
-		F9D3CCF6A58B591BA473EF65 /* MySeatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC238DA2515131830D9B8C /* MySeatViewModel.swift */; };
-		8B17E4CEEB2059CA86C7A373 /* SeatMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6798A78A3EAD5F5D8CD4DD56 /* SeatMapViewModel.swift */; };
-		2ECF30ABD6C15B4590623613 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889C82C37EEE5344A9C10991 /* AppState.swift */; };
-		2E5F24F9B263549AA4E25BE6 /* SmartLibraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666C10019D205B18B258FBD9 /* SmartLibraryApp.swift */; };
-		CB65CC0550965A99837D6D7A /* QRPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C1BEDBCC15552488B1B420 /* QRPayload.swift */; };
-		126D39BFAAFD55EAA94EC932 /* RPCModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F448F8A0DDC95A6EA75C7C7C /* RPCModels.swift */; };
-		80D6214754645A5580034498 /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458E6CD6F6575DDDA8F5EEE2 /* Recommendation.swift */; };
-		A7DFB4EF007F573896C7C01F /* Seat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE64A9C1C2558789AD736E2 /* Seat.swift */; };
-		3FBEEE02C2BC565FB1087E2A /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118F58E28865BB0925F9A61 /* AppConfig.swift */; };
-		BED59F12A91750B28DA90D1B /* DateFormatterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09118B4B831E5DF9897E4B76 /* DateFormatterHelper.swift */; };
-		064D020FB4B05D5B961E50F9 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4788B45BF9E591087EB89EE /* HapticFeedback.swift */; };
-		A874844C5F285FE7923C9BF3 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2FC532E9DC559686123DB0 /* Theme.swift */; };
-		FE088B3F83735C62926AC399 /* FacilityPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D35B830C0DC59F89E55E4E2 /* FacilityPill.swift */; };
-		B40773340BB156EC9127A8F7 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32445A5FA9AA5BABAC8DB9C7 /* PrimaryButton.swift */; };
-		C4C09835B9725F3CB9BFD4D9 /* StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C928A4960175F7083C56DF9 /* StatCard.swift */; };
-		000C3A5E60525E01B604ED1B /* StatusBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9E49F9BE385C45AF166CD4 /* StatusBadge.swift */; };
-		9B6D7775C57E5427AEEDDDE6 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91A8CAC47BE5F12BBF032C6 /* AuthView.swift */; };
-		A19EDEFA9B0C52C1A385CE28 /* EntryScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8BBAFBCEF9531EB54E083C /* EntryScannerView.swift */; };
-		91853147A9795A098C4E17BA /* QRScannerCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F88EF515C2531D9A97EE17 /* QRScannerCameraView.swift */; };
-		1A9BAE1BD7EE5D0E99BFA3B6 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59931F729CF75C34AEB30580 /* ToastView.swift */; };
-		A5A4957B83D652AE86EEF61F /* ExitChoiceSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FF40E8DD3452A8A736D9D5 /* ExitChoiceSheet.swift */; };
-		B3168F939B125060880B55A2 /* ExitScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E56E460DA85A57A7659E77 /* ExitScannerView.swift */; };
-		07A34F53206F5397B6735C3D /* FilterBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02277ED05635A27BACCD7B1 /* FilterBarView.swift */; };
-		B9F174816CA257618B3108FE /* RecommendationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDED5DB50A532E903EC317 /* RecommendationCardView.swift */; };
-		9E0670E151985A5293BE0474 /* SeatDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4E7CA82B9C5C44BC241292 /* SeatDetailSheet.swift */; };
-		D38C3528C5BC5DA394EAF6F8 /* SeatGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095DC61AA3855D54B1DEE2D7 /* SeatGridView.swift */; };
-		81CB6660BC435AA9B288B5FB /* SeatMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8D561DA5115B78B9E303DA /* SeatMapView.swift */; };
-		076DF9DEF3D75F989DDC0264 /* SeatNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BE68D83505A37A0F83B5B /* SeatNodeView.swift */; };
-		69F0072D5E6E572B9BD05F48 /* GracePeriodCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AF5866240651B4A1F1A758 /* GracePeriodCountdownView.swift */; };
-		68BBDED8AAFA5A9F83B78E1F /* MySeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685C51726F7581B90114CC2 /* MySeatView.swift */; };
-		DC332A043CE25F31801C3DF8 /* LibraryServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C9B7D09815D259E65329C /* LibraryServiceProtocol.swift */; };
-		057A9EE6608E5201A788B993 /* MockLibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF068BC5C885ED4ACCFA6AE /* MockLibraryService.swift */; };
-		8FE0223587E8541D942BDBBC /* QRCodeScannerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC51ED99C659CABBA3AA33 /* QRCodeScannerService.swift */; };
-		0E7FE64F76015D36978B00D8 /* RealtimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE711263C4DF537E99219768 /* RealtimeService.swift */; };
-		BBA0E3317E305F0CA276C91A /* SupabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445146CC56F5569EAB6918F3 /* SupabaseService.swift */; };
-		6185E4BB5DC35BA1AEEACFD8 /* ModelDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96ADF303075925AFF7E3F6 /* ModelDecodingTests.swift */; };
-		E14800B91BAE548C90B78ACE /* QRCodeParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09D17E9AB2528A93386690 /* QRCodeParserTests.swift */; };
+		000C3A5E60525E01B604ED1B /* Components/StatusBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9E49F9BE385C45AF166CD4 /* Components/StatusBadge.swift */; };
+		057A9EE6608E5201A788B993 /* Services/MockLibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF068BC5C885ED4ACCFA6AE /* Services/MockLibraryService.swift */; };
+		064D020FB4B05D5B961E50F9 /* Utilities/HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4788B45BF9E591087EB89EE /* Utilities/HapticFeedback.swift */; };
+		076DF9DEF3D75F989DDC0264 /* Views/SeatMap/SeatNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BE68D83505A37A0F83B5B /* Views/SeatMap/SeatNodeView.swift */; };
+		07A34F53206F5397B6735C3D /* Views/SeatMap/FilterBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02277ED05635A27BACCD7B1 /* Views/SeatMap/FilterBarView.swift */; };
+		0BDDDA0F596356398D19D2B6 /* Resources/AppConfig.example.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5C35A06C7F85D9AB8160B31 /* Resources/AppConfig.example.plist */; };
+		0E7FE64F76015D36978B00D8 /* Services/RealtimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE711263C4DF537E99219768 /* Services/RealtimeService.swift */; };
+		126D39BFAAFD55EAA94EC932 /* Models/RPCModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F448F8A0DDC95A6EA75C7C7C /* Models/RPCModels.swift */; };
+		1A9BAE1BD7EE5D0E99BFA3B6 /* Views/Common/ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59931F729CF75C34AEB30580 /* Views/Common/ToastView.swift */; };
+		25FE22BFE60F56698178DE61 /* Resources/Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CD9CC37868528186D5B11A /* Resources/Assets.xcassets */; };
+		29C41123A9C05DD892EA5587 /* Resources/AppConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 060FA15122EE52F7AF7C9301 /* Resources/AppConfig.plist */; };
+		2E5F24F9B263549AA4E25BE6 /* App/SmartLibraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666C10019D205B18B258FBD9 /* App/SmartLibraryApp.swift */; };
+		2ECF30ABD6C15B4590623613 /* App/AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889C82C37EEE5344A9C10991 /* App/AppState.swift */; };
 		31C95C5BAC40562197B8F817 /* RecommendationEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FC23EC86315D36A11E38CD /* RecommendationEngineTests.swift */; };
+		3FBEEE02C2BC565FB1087E2A /* Utilities/AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118F58E28865BB0925F9A61 /* Utilities/AppConfig.swift */; };
+		4E9BE74B53C152BFBF823E83 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 14D752E1945A5F40914F150F /* Supabase */; };
+		6185E4BB5DC35BA1AEEACFD8 /* ModelDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96ADF303075925AFF7E3F6 /* ModelDecodingTests.swift */; };
+		68BBDED8AAFA5A9F83B78E1F /* Views/Session/MySeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685C51726F7581B90114CC2 /* Views/Session/MySeatView.swift */; };
+		69F0072D5E6E572B9BD05F48 /* Views/Session/GracePeriodCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AF5866240651B4A1F1A758 /* Views/Session/GracePeriodCountdownView.swift */; };
+		80D6214754645A5580034498 /* Models/Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458E6CD6F6575DDDA8F5EEE2 /* Models/Recommendation.swift */; };
+		81CB6660BC435AA9B288B5FB /* Views/SeatMap/SeatMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8D561DA5115B78B9E303DA /* Views/SeatMap/SeatMapView.swift */; };
+		8B17E4CEEB2059CA86C7A373 /* ViewModels/SeatMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6798A78A3EAD5F5D8CD4DD56 /* ViewModels/SeatMapViewModel.swift */; };
+		8FE0223587E8541D942BDBBC /* Services/QRCodeScannerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFC51ED99C659CABBA3AA33 /* Services/QRCodeScannerService.swift */; };
+		91853147A9795A098C4E17BA /* Views/Entry/QRScannerCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F88EF515C2531D9A97EE17 /* Views/Entry/QRScannerCameraView.swift */; };
+		9B6D7775C57E5427AEEDDDE6 /* Views/Auth/AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91A8CAC47BE5F12BBF032C6 /* Views/Auth/AuthView.swift */; };
+		9E0670E151985A5293BE0474 /* Views/SeatMap/SeatDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4E7CA82B9C5C44BC241292 /* Views/SeatMap/SeatDetailSheet.swift */; };
+		A19EDEFA9B0C52C1A385CE28 /* Views/Entry/EntryScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8BBAFBCEF9531EB54E083C /* Views/Entry/EntryScannerView.swift */; };
+		A5A4957B83D652AE86EEF61F /* Views/Exit/ExitChoiceSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FF40E8DD3452A8A736D9D5 /* Views/Exit/ExitChoiceSheet.swift */; };
+		A7DFB4EF007F573896C7C01F /* Models/Seat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE64A9C1C2558789AD736E2 /* Models/Seat.swift */; };
+		A874844C5F285FE7923C9BF3 /* Utilities/Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2FC532E9DC559686123DB0 /* Utilities/Theme.swift */; };
+		B291B7C09D145096ABC700D4 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 14D752E1945A5F40914F150F /* Supabase */; };
+		B3168F939B125060880B55A2 /* Views/Exit/ExitScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E56E460DA85A57A7659E77 /* Views/Exit/ExitScannerView.swift */; };
+		B40773340BB156EC9127A8F7 /* Components/PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32445A5FA9AA5BABAC8DB9C7 /* Components/PrimaryButton.swift */; };
+		B51A4CD0037C51A0A41A0FB4 /* ViewModels/ExitScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ED35FF496B59C3984535ED /* ViewModels/ExitScannerViewModel.swift */; };
+		B9F174816CA257618B3108FE /* Views/SeatMap/RecommendationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDDED5DB50A532E903EC317 /* Views/SeatMap/RecommendationCardView.swift */; };
+		BBA0E3317E305F0CA276C91A /* Services/SupabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445146CC56F5569EAB6918F3 /* Services/SupabaseService.swift */; };
+		BED59F12A91750B28DA90D1B /* Utilities/DateFormatterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09118B4B831E5DF9897E4B76 /* Utilities/DateFormatterHelper.swift */; };
+		C4C09835B9725F3CB9BFD4D9 /* Components/StatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C928A4960175F7083C56DF9 /* Components/StatCard.swift */; };
+		CB65CC0550965A99837D6D7A /* Models/QRPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C1BEDBCC15552488B1B420 /* Models/QRPayload.swift */; };
+		D2371DA821DC52D68851CF69 /* ViewModels/AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43169E4A6495D4297467C20 /* ViewModels/AuthViewModel.swift */; };
+		D38C3528C5BC5DA394EAF6F8 /* Views/SeatMap/SeatGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095DC61AA3855D54B1DEE2D7 /* Views/SeatMap/SeatGridView.swift */; };
+		DC332A043CE25F31801C3DF8 /* Services/LibraryServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C9B7D09815D259E65329C /* Services/LibraryServiceProtocol.swift */; };
+		E14800B91BAE548C90B78ACE /* QRCodeParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09D17E9AB2528A93386690 /* QRCodeParserTests.swift */; };
+		EA70910878B75A3290889D72 /* ViewModels/EntryScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FE872CE4B958E5AFE90200 /* ViewModels/EntryScannerViewModel.swift */; };
+		F9D3CCF6A58B591BA473EF65 /* ViewModels/MySeatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC238DA2515131830D9B8C /* ViewModels/MySeatViewModel.swift */; };
+		FE088B3F83735C62926AC399 /* Components/FacilityPill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D35B830C0DC59F89E55E4E2 /* Components/FacilityPill.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,53 +66,53 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E6A3B83BAD73516F9050D14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Resources/Info.plist; sourceTree = "<group>"; };
-		060FA15122EE52F7AF7C9301 /* AppConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Resources/AppConfig.plist; sourceTree = "<group>"; };
-		D5C35A06C7F85D9AB8160B31 /* AppConfig.example.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Resources/AppConfig.example.plist; sourceTree = "<group>"; };
-		35CD9CC37868528186D5B11A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+		060FA15122EE52F7AF7C9301 /* Resources/AppConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Resources/AppConfig.plist; sourceTree = "<group>"; };
+		09118B4B831E5DF9897E4B76 /* Utilities/DateFormatterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities/DateFormatterHelper.swift; sourceTree = "<group>"; };
+		095DC61AA3855D54B1DEE2D7 /* Views/SeatMap/SeatGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/SeatMap/SeatGridView.swift; sourceTree = "<group>"; };
+		0D3BE68D83505A37A0F83B5B /* Views/SeatMap/SeatNodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/SeatMap/SeatNodeView.swift; sourceTree = "<group>"; };
+		0E2FC532E9DC559686123DB0 /* Utilities/Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities/Theme.swift; sourceTree = "<group>"; };
+		1C928A4960175F7083C56DF9 /* Components/StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components/StatCard.swift; sourceTree = "<group>"; };
+		1F96ADF303075925AFF7E3F6 /* ModelDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDecodingTests.swift; sourceTree = "<group>"; };
+		20F88EF515C2531D9A97EE17 /* Views/Entry/QRScannerCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Entry/QRScannerCameraView.swift; sourceTree = "<group>"; };
 		2B5932E36A7D5B9FBA184AE5 /* SmartLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D9E49F9BE385C45AF166CD4 /* Components/StatusBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components/StatusBadge.swift; sourceTree = "<group>"; };
+		2E8D561DA5115B78B9E303DA /* Views/SeatMap/SeatMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/SeatMap/SeatMapView.swift; sourceTree = "<group>"; };
+		32445A5FA9AA5BABAC8DB9C7 /* Components/PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components/PrimaryButton.swift; sourceTree = "<group>"; };
+		35CD9CC37868528186D5B11A /* Resources/Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+		3DE64A9C1C2558789AD736E2 /* Models/Seat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/Seat.swift; sourceTree = "<group>"; };
+		435C9B7D09815D259E65329C /* Services/LibraryServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/LibraryServiceProtocol.swift; sourceTree = "<group>"; };
+		445146CC56F5569EAB6918F3 /* Services/SupabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/SupabaseService.swift; sourceTree = "<group>"; };
+		458E6CD6F6575DDDA8F5EEE2 /* Models/Recommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/Recommendation.swift; sourceTree = "<group>"; };
+		4685C51726F7581B90114CC2 /* Views/Session/MySeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Session/MySeatView.swift; sourceTree = "<group>"; };
+		59931F729CF75C34AEB30580 /* Views/Common/ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Common/ToastView.swift; sourceTree = "<group>"; };
+		5B4E7CA82B9C5C44BC241292 /* Views/SeatMap/SeatDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/SeatMap/SeatDetailSheet.swift; sourceTree = "<group>"; };
+		5C09D17E9AB2528A93386690 /* QRCodeParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeParserTests.swift; sourceTree = "<group>"; };
+		5D35B830C0DC59F89E55E4E2 /* Components/FacilityPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components/FacilityPill.swift; sourceTree = "<group>"; };
+		666C10019D205B18B258FBD9 /* App/SmartLibraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/SmartLibraryApp.swift; sourceTree = "<group>"; };
+		6798A78A3EAD5F5D8CD4DD56 /* ViewModels/SeatMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/SeatMapViewModel.swift; sourceTree = "<group>"; };
+		7C8BBAFBCEF9531EB54E083C /* Views/Entry/EntryScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Entry/EntryScannerView.swift; sourceTree = "<group>"; };
+		8118F58E28865BB0925F9A61 /* Utilities/AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities/AppConfig.swift; sourceTree = "<group>"; };
 		8695BE1295745BDCA833E903 /* SmartLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C43169E4A6495D4297467C20 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModels/AuthViewModel.swift"; sourceTree = "<group>"; };
-		95FE872CE4B958E5AFE90200 /* EntryScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModels/EntryScannerViewModel.swift"; sourceTree = "<group>"; };
-		D3ED35FF496B59C3984535ED /* ExitScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModels/ExitScannerViewModel.swift"; sourceTree = "<group>"; };
-		DEFC238DA2515131830D9B8C /* MySeatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModels/MySeatViewModel.swift"; sourceTree = "<group>"; };
-		6798A78A3EAD5F5D8CD4DD56 /* SeatMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModels/SeatMapViewModel.swift"; sourceTree = "<group>"; };
-		889C82C37EEE5344A9C10991 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/AppState.swift"; sourceTree = "<group>"; };
-		666C10019D205B18B258FBD9 /* SmartLibraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/SmartLibraryApp.swift"; sourceTree = "<group>"; };
-		E1C1BEDBCC15552488B1B420 /* QRPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/QRPayload.swift"; sourceTree = "<group>"; };
-		F448F8A0DDC95A6EA75C7C7C /* RPCModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/RPCModels.swift"; sourceTree = "<group>"; };
-		458E6CD6F6575DDDA8F5EEE2 /* Recommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/Recommendation.swift"; sourceTree = "<group>"; };
-		3DE64A9C1C2558789AD736E2 /* Seat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models/Seat.swift"; sourceTree = "<group>"; };
-		8118F58E28865BB0925F9A61 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utilities/AppConfig.swift"; sourceTree = "<group>"; };
-		09118B4B831E5DF9897E4B76 /* DateFormatterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utilities/DateFormatterHelper.swift"; sourceTree = "<group>"; };
-		A4788B45BF9E591087EB89EE /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utilities/HapticFeedback.swift"; sourceTree = "<group>"; };
-		0E2FC532E9DC559686123DB0 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utilities/Theme.swift"; sourceTree = "<group>"; };
-		5D35B830C0DC59F89E55E4E2 /* FacilityPill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Components/FacilityPill.swift"; sourceTree = "<group>"; };
-		32445A5FA9AA5BABAC8DB9C7 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Components/PrimaryButton.swift"; sourceTree = "<group>"; };
-		1C928A4960175F7083C56DF9 /* StatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Components/StatCard.swift"; sourceTree = "<group>"; };
-		2D9E49F9BE385C45AF166CD4 /* StatusBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Components/StatusBadge.swift"; sourceTree = "<group>"; };
-		A91A8CAC47BE5F12BBF032C6 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Auth/AuthView.swift"; sourceTree = "<group>"; };
-		7C8BBAFBCEF9531EB54E083C /* EntryScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Entry/EntryScannerView.swift"; sourceTree = "<group>"; };
-		20F88EF515C2531D9A97EE17 /* QRScannerCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Entry/QRScannerCameraView.swift"; sourceTree = "<group>"; };
-		59931F729CF75C34AEB30580 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Common/ToastView.swift"; sourceTree = "<group>"; };
-		98FF40E8DD3452A8A736D9D5 /* ExitChoiceSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Exit/ExitChoiceSheet.swift"; sourceTree = "<group>"; };
-		D5E56E460DA85A57A7659E77 /* ExitScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Exit/ExitScannerView.swift"; sourceTree = "<group>"; };
-		C02277ED05635A27BACCD7B1 /* FilterBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/SeatMap/FilterBarView.swift"; sourceTree = "<group>"; };
-		CCDDED5DB50A532E903EC317 /* RecommendationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/SeatMap/RecommendationCardView.swift"; sourceTree = "<group>"; };
-		5B4E7CA82B9C5C44BC241292 /* SeatDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/SeatMap/SeatDetailSheet.swift"; sourceTree = "<group>"; };
-		095DC61AA3855D54B1DEE2D7 /* SeatGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/SeatMap/SeatGridView.swift"; sourceTree = "<group>"; };
-		2E8D561DA5115B78B9E303DA /* SeatMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/SeatMap/SeatMapView.swift"; sourceTree = "<group>"; };
-		0D3BE68D83505A37A0F83B5B /* SeatNodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/SeatMap/SeatNodeView.swift"; sourceTree = "<group>"; };
-		A6AF5866240651B4A1F1A758 /* GracePeriodCountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Session/GracePeriodCountdownView.swift"; sourceTree = "<group>"; };
-		4685C51726F7581B90114CC2 /* MySeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views/Session/MySeatView.swift"; sourceTree = "<group>"; };
-		435C9B7D09815D259E65329C /* LibraryServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services/LibraryServiceProtocol.swift"; sourceTree = "<group>"; };
-		9CF068BC5C885ED4ACCFA6AE /* MockLibraryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services/MockLibraryService.swift"; sourceTree = "<group>"; };
-		FFFC51ED99C659CABBA3AA33 /* QRCodeScannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services/QRCodeScannerService.swift"; sourceTree = "<group>"; };
-		FE711263C4DF537E99219768 /* RealtimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services/RealtimeService.swift"; sourceTree = "<group>"; };
-		445146CC56F5569EAB6918F3 /* SupabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services/SupabaseService.swift"; sourceTree = "<group>"; };
-		1F96ADF303075925AFF7E3F6 /* ModelDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelDecodingTests.swift"; sourceTree = "<group>"; };
-		5C09D17E9AB2528A93386690 /* QRCodeParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QRCodeParserTests.swift"; sourceTree = "<group>"; };
-		94FC23EC86315D36A11E38CD /* RecommendationEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecommendationEngineTests.swift"; sourceTree = "<group>"; };
+		889C82C37EEE5344A9C10991 /* App/AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AppState.swift; sourceTree = "<group>"; };
+		94FC23EC86315D36A11E38CD /* RecommendationEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationEngineTests.swift; sourceTree = "<group>"; };
+		95FE872CE4B958E5AFE90200 /* ViewModels/EntryScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/EntryScannerViewModel.swift; sourceTree = "<group>"; };
+		98FF40E8DD3452A8A736D9D5 /* Views/Exit/ExitChoiceSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Exit/ExitChoiceSheet.swift; sourceTree = "<group>"; };
+		9CF068BC5C885ED4ACCFA6AE /* Services/MockLibraryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/MockLibraryService.swift; sourceTree = "<group>"; };
+		A4788B45BF9E591087EB89EE /* Utilities/HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities/HapticFeedback.swift; sourceTree = "<group>"; };
+		A6AF5866240651B4A1F1A758 /* Views/Session/GracePeriodCountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Session/GracePeriodCountdownView.swift; sourceTree = "<group>"; };
+		A91A8CAC47BE5F12BBF032C6 /* Views/Auth/AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Auth/AuthView.swift; sourceTree = "<group>"; };
+		C02277ED05635A27BACCD7B1 /* Views/SeatMap/FilterBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/SeatMap/FilterBarView.swift; sourceTree = "<group>"; };
+		C43169E4A6495D4297467C20 /* ViewModels/AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/AuthViewModel.swift; sourceTree = "<group>"; };
+		CCDDED5DB50A532E903EC317 /* Views/SeatMap/RecommendationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/SeatMap/RecommendationCardView.swift; sourceTree = "<group>"; };
+		D3ED35FF496B59C3984535ED /* ViewModels/ExitScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/ExitScannerViewModel.swift; sourceTree = "<group>"; };
+		D5C35A06C7F85D9AB8160B31 /* Resources/AppConfig.example.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Resources/AppConfig.example.plist; sourceTree = "<group>"; };
+		D5E56E460DA85A57A7659E77 /* Views/Exit/ExitScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Exit/ExitScannerView.swift; sourceTree = "<group>"; };
+		DEFC238DA2515131830D9B8C /* ViewModels/MySeatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels/MySeatViewModel.swift; sourceTree = "<group>"; };
+		E1C1BEDBCC15552488B1B420 /* Models/QRPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/QRPayload.swift; sourceTree = "<group>"; };
+		E6A3B83BAD73516F9050D14A /* Resources/Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Resources/Info.plist; sourceTree = "<group>"; };
+		F448F8A0DDC95A6EA75C7C7C /* Models/RPCModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models/RPCModels.swift; sourceTree = "<group>"; };
+		FE711263C4DF537E99219768 /* Services/RealtimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/RealtimeService.swift; sourceTree = "<group>"; };
+		FFFC51ED99C659CABBA3AA33 /* Services/QRCodeScannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services/QRCodeScannerService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +135,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CAD4433D11250E2B382B2D8 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1F96ADF303075925AFF7E3F6 /* ModelDecodingTests.swift */,
+				5C09D17E9AB2528A93386690 /* QRCodeParserTests.swift */,
+				94FC23EC86315D36A11E38CD /* RecommendationEngineTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		349D83B484FA598FAF2567BC /* SmartLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				C43169E4A6495D4297467C20 /* ViewModels/AuthViewModel.swift */,
+				95FE872CE4B958E5AFE90200 /* ViewModels/EntryScannerViewModel.swift */,
+				D3ED35FF496B59C3984535ED /* ViewModels/ExitScannerViewModel.swift */,
+				DEFC238DA2515131830D9B8C /* ViewModels/MySeatViewModel.swift */,
+				6798A78A3EAD5F5D8CD4DD56 /* ViewModels/SeatMapViewModel.swift */,
+				889C82C37EEE5344A9C10991 /* App/AppState.swift */,
+				666C10019D205B18B258FBD9 /* App/SmartLibraryApp.swift */,
+				E1C1BEDBCC15552488B1B420 /* Models/QRPayload.swift */,
+				F448F8A0DDC95A6EA75C7C7C /* Models/RPCModels.swift */,
+				458E6CD6F6575DDDA8F5EEE2 /* Models/Recommendation.swift */,
+				3DE64A9C1C2558789AD736E2 /* Models/Seat.swift */,
+				8118F58E28865BB0925F9A61 /* Utilities/AppConfig.swift */,
+				09118B4B831E5DF9897E4B76 /* Utilities/DateFormatterHelper.swift */,
+				A4788B45BF9E591087EB89EE /* Utilities/HapticFeedback.swift */,
+				0E2FC532E9DC559686123DB0 /* Utilities/Theme.swift */,
+				5D35B830C0DC59F89E55E4E2 /* Components/FacilityPill.swift */,
+				32445A5FA9AA5BABAC8DB9C7 /* Components/PrimaryButton.swift */,
+				1C928A4960175F7083C56DF9 /* Components/StatCard.swift */,
+				2D9E49F9BE385C45AF166CD4 /* Components/StatusBadge.swift */,
+				A91A8CAC47BE5F12BBF032C6 /* Views/Auth/AuthView.swift */,
+				7C8BBAFBCEF9531EB54E083C /* Views/Entry/EntryScannerView.swift */,
+				20F88EF515C2531D9A97EE17 /* Views/Entry/QRScannerCameraView.swift */,
+				59931F729CF75C34AEB30580 /* Views/Common/ToastView.swift */,
+				98FF40E8DD3452A8A736D9D5 /* Views/Exit/ExitChoiceSheet.swift */,
+				D5E56E460DA85A57A7659E77 /* Views/Exit/ExitScannerView.swift */,
+				C02277ED05635A27BACCD7B1 /* Views/SeatMap/FilterBarView.swift */,
+				CCDDED5DB50A532E903EC317 /* Views/SeatMap/RecommendationCardView.swift */,
+				5B4E7CA82B9C5C44BC241292 /* Views/SeatMap/SeatDetailSheet.swift */,
+				095DC61AA3855D54B1DEE2D7 /* Views/SeatMap/SeatGridView.swift */,
+				2E8D561DA5115B78B9E303DA /* Views/SeatMap/SeatMapView.swift */,
+				0D3BE68D83505A37A0F83B5B /* Views/SeatMap/SeatNodeView.swift */,
+				A6AF5866240651B4A1F1A758 /* Views/Session/GracePeriodCountdownView.swift */,
+				4685C51726F7581B90114CC2 /* Views/Session/MySeatView.swift */,
+				435C9B7D09815D259E65329C /* Services/LibraryServiceProtocol.swift */,
+				9CF068BC5C885ED4ACCFA6AE /* Services/MockLibraryService.swift */,
+				FFFC51ED99C659CABBA3AA33 /* Services/QRCodeScannerService.swift */,
+				FE711263C4DF537E99219768 /* Services/RealtimeService.swift */,
+				445146CC56F5569EAB6918F3 /* Services/SupabaseService.swift */,
+				E6A3B83BAD73516F9050D14A /* Resources/Info.plist */,
+				060FA15122EE52F7AF7C9301 /* Resources/AppConfig.plist */,
+				D5C35A06C7F85D9AB8160B31 /* Resources/AppConfig.example.plist */,
+				35CD9CC37868528186D5B11A /* Resources/Assets.xcassets */,
+			);
+			path = SmartLibrary;
+			sourceTree = "<group>";
+		};
 		35F6EC96FF9750BDBD1FBA62 = {
 			isa = PBXGroup;
 			children = (
@@ -143,65 +202,6 @@
 				6D2E0A97B6BA51D2A1B5CB6D /* Products */,
 				8192602D69495E2393D3507B /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		349D83B484FA598FAF2567BC /* SmartLibrary */ = {
-			isa = PBXGroup;
-			children = (
-				C43169E4A6495D4297467C20,
-				95FE872CE4B958E5AFE90200,
-				D3ED35FF496B59C3984535ED,
-				DEFC238DA2515131830D9B8C,
-				6798A78A3EAD5F5D8CD4DD56,
-				889C82C37EEE5344A9C10991,
-				666C10019D205B18B258FBD9,
-				E1C1BEDBCC15552488B1B420,
-				F448F8A0DDC95A6EA75C7C7C,
-				458E6CD6F6575DDDA8F5EEE2,
-				3DE64A9C1C2558789AD736E2,
-				8118F58E28865BB0925F9A61,
-				09118B4B831E5DF9897E4B76,
-				A4788B45BF9E591087EB89EE,
-				0E2FC532E9DC559686123DB0,
-				5D35B830C0DC59F89E55E4E2,
-				32445A5FA9AA5BABAC8DB9C7,
-				1C928A4960175F7083C56DF9,
-				2D9E49F9BE385C45AF166CD4,
-				A91A8CAC47BE5F12BBF032C6,
-				7C8BBAFBCEF9531EB54E083C,
-				20F88EF515C2531D9A97EE17,
-				59931F729CF75C34AEB30580,
-				98FF40E8DD3452A8A736D9D5,
-				D5E56E460DA85A57A7659E77,
-				C02277ED05635A27BACCD7B1,
-				CCDDED5DB50A532E903EC317,
-				5B4E7CA82B9C5C44BC241292,
-				095DC61AA3855D54B1DEE2D7,
-				2E8D561DA5115B78B9E303DA,
-				0D3BE68D83505A37A0F83B5B,
-				A6AF5866240651B4A1F1A758,
-				4685C51726F7581B90114CC2,
-				435C9B7D09815D259E65329C,
-				9CF068BC5C885ED4ACCFA6AE,
-				FFFC51ED99C659CABBA3AA33,
-				FE711263C4DF537E99219768,
-				445146CC56F5569EAB6918F3,
-				E6A3B83BAD73516F9050D14A /* Info.plist */,
-				060FA15122EE52F7AF7C9301 /* AppConfig.plist */,
-				D5C35A06C7F85D9AB8160B31 /* AppConfig.example.plist */,
-				35CD9CC37868528186D5B11A /* Assets.xcassets */,
-			);
-			path = SmartLibrary;
-			sourceTree = "<group>";
-		};
-		2CAD4433D11250E2B382B2D8 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				1F96ADF303075925AFF7E3F6,
-				5C09D17E9AB2528A93386690,
-				94FC23EC86315D36A11E38CD,
-			);
-			path = Tests;
 			sourceTree = "<group>";
 		};
 		6D2E0A97B6BA51D2A1B5CB6D /* Products */ = {
@@ -223,26 +223,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D60720EB6FCA5A20B6E8C4B7 /* SmartLibrary */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E5888392A12B53E4AEFC31B3 /* Build configuration list for PBXNativeTarget "SmartLibrary" */;
-			buildPhases = (
-				EE55B6A9F7D55C46A3AC6FA5 /* Sources */,
-				6EC425564AE5538B805C08F5 /* Frameworks */,
-				53F0BD76CD1854169DA38EC6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SmartLibrary;
-			packageProductDependencies = (
-				14D752E1945A5F40914F150F /* Supabase */,
-			);
-			productName = SmartLibrary;
-			productReference = 2B5932E36A7D5B9FBA184AE5 /* SmartLibrary.app */;
-			productType = "com.apple.product-type.application";
-		};
 		BF2925035D4F5CF6B1ACB05C /* SmartLibraryTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BF2E6F470ED5F3D979CA745 /* Build configuration list for PBXNativeTarget "SmartLibraryTests" */;
@@ -264,6 +244,26 @@
 			productReference = 8695BE1295745BDCA833E903 /* SmartLibraryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D60720EB6FCA5A20B6E8C4B7 /* SmartLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5888392A12B53E4AEFC31B3 /* Build configuration list for PBXNativeTarget "SmartLibrary" */;
+			buildPhases = (
+				EE55B6A9F7D55C46A3AC6FA5 /* Sources */,
+				6EC425564AE5538B805C08F5 /* Frameworks */,
+				53F0BD76CD1854169DA38EC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartLibrary;
+			packageProductDependencies = (
+				14D752E1945A5F40914F150F /* Supabase */,
+			);
+			productName = SmartLibrary;
+			productReference = 2B5932E36A7D5B9FBA184AE5 /* SmartLibrary.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -273,12 +273,12 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					D60720EB6FCA5A20B6E8C4B7 = {
-						CreatedOnToolsVersion = 15.0;
-					};
 					BF2925035D4F5CF6B1ACB05C = {
 						CreatedOnToolsVersion = 15.0;
 						TestTargetID = D60720EB6FCA5A20B6E8C4B7;
+					};
+					D60720EB6FCA5A20B6E8C4B7 = {
+						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
@@ -309,9 +309,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29C41123A9C05DD892EA5587 /* AppConfig.plist in Resources */,
-				0BDDDA0F596356398D19D2B6 /* AppConfig.example.plist in Resources */,
-				25FE22BFE60F56698178DE61 /* Assets.xcassets in Resources */,
+				29C41123A9C05DD892EA5587 /* Resources/AppConfig.plist in Resources */,
+				0BDDDA0F596356398D19D2B6 /* Resources/AppConfig.example.plist in Resources */,
+				25FE22BFE60F56698178DE61 /* Resources/Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,58 +325,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EE55B6A9F7D55C46A3AC6FA5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2371DA821DC52D68851CF69 /* Swift in Sources */,
-				EA70910878B75A3290889D72 /* Swift in Sources */,
-				B51A4CD0037C51A0A41A0FB4 /* Swift in Sources */,
-				F9D3CCF6A58B591BA473EF65 /* Swift in Sources */,
-				8B17E4CEEB2059CA86C7A373 /* Swift in Sources */,
-				2ECF30ABD6C15B4590623613 /* Swift in Sources */,
-				2E5F24F9B263549AA4E25BE6 /* Swift in Sources */,
-				CB65CC0550965A99837D6D7A /* Swift in Sources */,
-				126D39BFAAFD55EAA94EC932 /* Swift in Sources */,
-				80D6214754645A5580034498 /* Swift in Sources */,
-				A7DFB4EF007F573896C7C01F /* Swift in Sources */,
-				3FBEEE02C2BC565FB1087E2A /* Swift in Sources */,
-				BED59F12A91750B28DA90D1B /* Swift in Sources */,
-				064D020FB4B05D5B961E50F9 /* Swift in Sources */,
-				A874844C5F285FE7923C9BF3 /* Swift in Sources */,
-				FE088B3F83735C62926AC399 /* Swift in Sources */,
-				B40773340BB156EC9127A8F7 /* Swift in Sources */,
-				C4C09835B9725F3CB9BFD4D9 /* Swift in Sources */,
-				000C3A5E60525E01B604ED1B /* Swift in Sources */,
-				9B6D7775C57E5427AEEDDDE6 /* Swift in Sources */,
-				A19EDEFA9B0C52C1A385CE28 /* Swift in Sources */,
-				91853147A9795A098C4E17BA /* Swift in Sources */,
-				1A9BAE1BD7EE5D0E99BFA3B6 /* Swift in Sources */,
-				A5A4957B83D652AE86EEF61F /* Swift in Sources */,
-				B3168F939B125060880B55A2 /* Swift in Sources */,
-				07A34F53206F5397B6735C3D /* Swift in Sources */,
-				B9F174816CA257618B3108FE /* Swift in Sources */,
-				9E0670E151985A5293BE0474 /* Swift in Sources */,
-				D38C3528C5BC5DA394EAF6F8 /* Swift in Sources */,
-				81CB6660BC435AA9B288B5FB /* Swift in Sources */,
-				076DF9DEF3D75F989DDC0264 /* Swift in Sources */,
-				69F0072D5E6E572B9BD05F48 /* Swift in Sources */,
-				68BBDED8AAFA5A9F83B78E1F /* Swift in Sources */,
-				DC332A043CE25F31801C3DF8 /* Swift in Sources */,
-				057A9EE6608E5201A788B993 /* Swift in Sources */,
-				8FE0223587E8541D942BDBBC /* Swift in Sources */,
-				0E7FE64F76015D36978B00D8 /* Swift in Sources */,
-				BBA0E3317E305F0CA276C91A /* Swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C16106BFAF7B5626A8AB2E4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6185E4BB5DC35BA1AEEACFD8 /* Test Swift in Sources */,
-				E14800B91BAE548C90B78ACE /* Test Swift in Sources */,
-				31C95C5BAC40562197B8F817 /* Test Swift in Sources */,
+				6185E4BB5DC35BA1AEEACFD8 /* ModelDecodingTests.swift in Sources */,
+				E14800B91BAE548C90B78ACE /* QRCodeParserTests.swift in Sources */,
+				31C95C5BAC40562197B8F817 /* RecommendationEngineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE55B6A9F7D55C46A3AC6FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2371DA821DC52D68851CF69 /* ViewModels/AuthViewModel.swift in Sources */,
+				EA70910878B75A3290889D72 /* ViewModels/EntryScannerViewModel.swift in Sources */,
+				B51A4CD0037C51A0A41A0FB4 /* ViewModels/ExitScannerViewModel.swift in Sources */,
+				F9D3CCF6A58B591BA473EF65 /* ViewModels/MySeatViewModel.swift in Sources */,
+				8B17E4CEEB2059CA86C7A373 /* ViewModels/SeatMapViewModel.swift in Sources */,
+				2ECF30ABD6C15B4590623613 /* App/AppState.swift in Sources */,
+				2E5F24F9B263549AA4E25BE6 /* App/SmartLibraryApp.swift in Sources */,
+				CB65CC0550965A99837D6D7A /* Models/QRPayload.swift in Sources */,
+				126D39BFAAFD55EAA94EC932 /* Models/RPCModels.swift in Sources */,
+				80D6214754645A5580034498 /* Models/Recommendation.swift in Sources */,
+				A7DFB4EF007F573896C7C01F /* Models/Seat.swift in Sources */,
+				3FBEEE02C2BC565FB1087E2A /* Utilities/AppConfig.swift in Sources */,
+				BED59F12A91750B28DA90D1B /* Utilities/DateFormatterHelper.swift in Sources */,
+				064D020FB4B05D5B961E50F9 /* Utilities/HapticFeedback.swift in Sources */,
+				A874844C5F285FE7923C9BF3 /* Utilities/Theme.swift in Sources */,
+				FE088B3F83735C62926AC399 /* Components/FacilityPill.swift in Sources */,
+				B40773340BB156EC9127A8F7 /* Components/PrimaryButton.swift in Sources */,
+				C4C09835B9725F3CB9BFD4D9 /* Components/StatCard.swift in Sources */,
+				000C3A5E60525E01B604ED1B /* Components/StatusBadge.swift in Sources */,
+				9B6D7775C57E5427AEEDDDE6 /* Views/Auth/AuthView.swift in Sources */,
+				A19EDEFA9B0C52C1A385CE28 /* Views/Entry/EntryScannerView.swift in Sources */,
+				91853147A9795A098C4E17BA /* Views/Entry/QRScannerCameraView.swift in Sources */,
+				1A9BAE1BD7EE5D0E99BFA3B6 /* Views/Common/ToastView.swift in Sources */,
+				A5A4957B83D652AE86EEF61F /* Views/Exit/ExitChoiceSheet.swift in Sources */,
+				B3168F939B125060880B55A2 /* Views/Exit/ExitScannerView.swift in Sources */,
+				07A34F53206F5397B6735C3D /* Views/SeatMap/FilterBarView.swift in Sources */,
+				B9F174816CA257618B3108FE /* Views/SeatMap/RecommendationCardView.swift in Sources */,
+				9E0670E151985A5293BE0474 /* Views/SeatMap/SeatDetailSheet.swift in Sources */,
+				D38C3528C5BC5DA394EAF6F8 /* Views/SeatMap/SeatGridView.swift in Sources */,
+				81CB6660BC435AA9B288B5FB /* Views/SeatMap/SeatMapView.swift in Sources */,
+				076DF9DEF3D75F989DDC0264 /* Views/SeatMap/SeatNodeView.swift in Sources */,
+				69F0072D5E6E572B9BD05F48 /* Views/Session/GracePeriodCountdownView.swift in Sources */,
+				68BBDED8AAFA5A9F83B78E1F /* Views/Session/MySeatView.swift in Sources */,
+				DC332A043CE25F31801C3DF8 /* Services/LibraryServiceProtocol.swift in Sources */,
+				057A9EE6608E5201A788B993 /* Services/MockLibraryService.swift in Sources */,
+				8FE0223587E8541D942BDBBC /* Services/QRCodeScannerService.swift in Sources */,
+				0E7FE64F76015D36978B00D8 /* Services/RealtimeService.swift in Sources */,
+				BBA0E3317E305F0CA276C91A /* Services/SupabaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +391,48 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1E681816D4035C208509D5F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SmartLibrary/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deskguard.SmartLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2AC2A05C24E55324A8806C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deskguard.SmartLibraryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartLibrary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartLibrary";
+			};
+			name = Debug;
+		};
 		4B75CCFCF12758C192113D6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -420,52 +462,6 @@
 			};
 			name = Debug;
 		};
-		846E43B5E38C55B4BB148150 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		1E681816D4035C208509D5F8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = SmartLibrary/Resources/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.deskguard.SmartLibrary;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		800078F8B43053DE88A4A7F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -490,23 +486,27 @@
 			};
 			name = Release;
 		};
-		2AC2A05C24E55324A8806C92 /* Debug */ = {
+		846E43B5E38C55B4BB148150 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.deskguard.SmartLibraryTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartLibrary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartLibrary";
 			};
-			name = Debug;
+			name = Release;
 		};
 		A3E79960B42F5A859D26F0C4 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -529,6 +529,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1BF2E6F470ED5F3D979CA745 /* Build configuration list for PBXNativeTarget "SmartLibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AC2A05C24E55324A8806C92 /* Debug */,
+				A3E79960B42F5A859D26F0C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A3C9240993E759AEA26C1039 /* Build configuration list for PBXProject "SmartLibrary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -543,15 +552,6 @@
 			buildConfigurations = (
 				1E681816D4035C208509D5F8 /* Debug */,
 				800078F8B43053DE88A4A7F8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1BF2E6F470ED5F3D979CA745 /* Build configuration list for PBXNativeTarget "SmartLibraryTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2AC2A05C24E55324A8806C92 /* Debug */,
-				A3E79960B42F5A859D26F0C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -576,7 +576,6 @@
 			productName = Supabase;
 		};
 /* End XCSwiftPackageProductDependency section */
-
 	};
 	rootObject = 2C0EAD724F7C5A82A41C62BC /* Project object */;
 }

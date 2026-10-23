@@ -60,4 +60,29 @@ final class QRCodeParserTests: XCTestCase {
             XCTAssertEqual(error as? QRParseError, .unsupportedLibrary(otherLib))
         }
     }
+
+    func testDuplicateSubmissionPrevention() {
+        var scannedCount = 0
+        var isLocked = false
+
+        let simulateScan = { (code: String) in
+            guard !isLocked else { return }
+            isLocked = true
+            scannedCount += 1
+        }
+
+        // First frame
+        simulateScan("SLMS|ENTRY|11111111-1111-4111-8111-111111111111")
+        XCTAssertEqual(scannedCount, 1)
+
+        // Rapid duplicate consecutive frames arrive before lock is released
+        simulateScan("SLMS|ENTRY|11111111-1111-4111-8111-111111111111")
+        simulateScan("SLMS|ENTRY|11111111-1111-4111-8111-111111111111")
+        XCTAssertEqual(scannedCount, 1, "Duplicate frames while locked must be ignored")
+
+        // Once processed and reset, next scan succeeds
+        isLocked = false
+        simulateScan("SLMS|ENTRY|11111111-1111-4111-8111-111111111111")
+        XCTAssertEqual(scannedCount, 2)
+    }
 }

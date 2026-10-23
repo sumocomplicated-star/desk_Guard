@@ -52,7 +52,7 @@ public enum DateFormatterHelper {
     /// Calculates remaining seconds from a server-provided ISO-8601 grace deadline
     public static func remainingSeconds(from deadlineISO: String?, relativeTo now: Date = Date()) -> Int {
         guard let deadline = parseISO8601(deadlineISO) else { return 0 }
-        let diff = Int(deadline.timeIntervalSince(now))
+        let diff = Int(ceil(deadline.timeIntervalSince(now)))
         return max(0, diff)
     }
 
